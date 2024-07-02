@@ -1,0 +1,20 @@
+// Syntax Tree
+digraph {
+	expr0 [label=expr]
+	term0 [label=term]
+	expr0 -> term0
+	factor0 [label=factor]
+	term0 -> factor0
+	num0 [label=5]
+	factor0 -> num0
+	op1 [label="+"]
+	expr0 -> op1
+	expr2 [label=expr]
+	expr0 -> expr2
+	term2 [label=term]
+	expr2 -> term2
+	factor2 [label=factor]
+	term2 -> factor2
+	num2 [label=5]
+	factor2 -> num2
+}
